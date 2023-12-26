@@ -75,6 +75,5 @@ jobs:
         uses: ./
         with:
           input_path: macho-binary
-          output_path: macho-binary-p12
           p12_file: certs/self-signed-developer-id-application.p12
           p12_password: ${{ secrets.DEVELOPER_ID_APPLICATION_PASSWORD }}

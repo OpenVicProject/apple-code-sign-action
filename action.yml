@@ -5,11 +5,8 @@ author: 'Gregory Szorc'
 inputs:
   # This is the only required input.
   input_path:
-    description: 'Path to file or directory to sign'
+    description: 'Glob Path to files or directories to sign'
     required: true
-
-  output_path:
-    description: 'Output path of signed entity. Leave blank to sign in place'
 
   # Specify the actions you want to perform.
 
@@ -112,8 +109,8 @@ inputs:
     default: '0.26.0'
 
 outputs:
-  output_path:
-    description: 'Path to signed/notarized/stapled entity'
+  output_paths:
+    description: 'Path to signed/notarized/stapled entities'
 
 runs:
   using: node20
